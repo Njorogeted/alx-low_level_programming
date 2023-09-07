@@ -1,2 +1,2 @@
 #!/bin/bash
-extract=$(basename "$CFILE" .c) ; gcc -c "$CFILE" -o "$exctract.s" > C
+extract=$(basename "$CFILE" .c) ; gcc -c "$CFILE" -o "$exctract.s"
