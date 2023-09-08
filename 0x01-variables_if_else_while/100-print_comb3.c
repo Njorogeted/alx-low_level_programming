@@ -13,18 +13,20 @@ int main(void)
 	for (b = a; b <= 9; b++)
 	{
 		c = a + b;
-		if (a != b && c != 17)
+		if (a != b)
 		{
 			putchar(a + '0');
 			putchar(b + '0');
+			if (c != 17)
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
-		else
 		{
-	putchar('\n');
 		}
 	}
 	}
+	putchar ('\n');
 	return (0);
 }
