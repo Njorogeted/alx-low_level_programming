@@ -16,7 +16,6 @@ int main(void)
 	{
 	for (c = b; c <= '9'; c++)
 	{
-		k = a + b + c;
 		if (a != b && a != c && b != c)
 		{
 			putchar(a);
