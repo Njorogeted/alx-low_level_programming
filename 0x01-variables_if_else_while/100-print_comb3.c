@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int a, b, c;
 
 	for (a = 0; a <= 9; a++)
 	{
 	for (b = 0; b <= 9; b++)
 	{
-		if (a != b && (a + b) != (b + a)
+		c = a + b;
+		if (a != b && (a + b) != c
 				&& (a + b) != 17)
 		{
 			putchar(a + '0');
