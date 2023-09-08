@@ -12,17 +12,20 @@ int main(void)
 
 	for (a = '0'; a <= '9'; a++)
 	{
-	for (b = '0'; b <= '9'; b++)
+	for (b = a; b <= '9'; b++)
 	{
-	for (c = '0'; c <= '9'; c++)
+	for (c = b; c <= '9'; c++)
 	{
 		if (a != b && a != c && b != c)
 		{
 			putchar(a);
 			putchar(b);
 			putchar(c);
+			if ((a + b + c) != 24)
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
 	}
 	}
