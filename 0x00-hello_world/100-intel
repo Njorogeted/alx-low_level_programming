@@ -1,2 +1,2 @@
 #!/bin/bash
-ex=$(basename "$CFILE" .c) ; gcc -c "$CFILE" -o "$ex.s"
+ex=$(basename "$CFILE" .c) ; gcc -S -masm=intel "$CFILE" -o "$ex.s"
