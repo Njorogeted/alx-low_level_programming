@@ -10,6 +10,9 @@ int main(void)
 	char a[16] = "0123456789abcdef";
 
 	for (c = 0; c < 16; c++)
+	{
 		putchar(a[c]);
+	}
+	putchar('\n');
 	return (0);
 }
