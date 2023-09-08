@@ -9,6 +9,7 @@ int main(void)
 	int a;
 	int b;
 	int c;
+	int k;
 
 	for (a = '0'; a <= '9'; a++)
 	{
@@ -16,12 +17,13 @@ int main(void)
 	{
 	for (c = b; c <= '9'; c++)
 	{
+		k = a + b + c;
 		if (a != b && a != c && b != c)
 		{
 			putchar(a);
 			putchar(b);
 			putchar(c);
-			if ((a + b + c) != 24)
+			if (k != 24)
 			{
 			putchar(',');
 			putchar(' ');
