@@ -10,10 +10,18 @@ int main(void)
 
 	for (a = '0'; a <= '9'; a++)
 	{
+	if (a == 9)
+        {
+        putchar('\n');
+        }
+        else
 		putchar(a);
 		putchar(',');
 		putchar(' ');
-	}
+		if (a == 9)
+	{
 	putchar('\n');
+	}
+	else
 	return (0);
 }
