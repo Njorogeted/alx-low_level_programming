@@ -9,19 +9,23 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = 0; a <= 9; a++)
 	{
-	for (b = '0'; b <= '9'; b++)
+	for (b = 0; b <= 9; b++)
 	{
-		if (a != b)
+		if (a != b && (a + b) != (b + a)
+				&& (a + b) != 17)
 		{
-			putchar(a);
-			putchar(b);
+			putchar(a + '0');
+			putchar(b + '0');
 			putchar(',');
 			putchar(' ');
 		}
-	}
-	}
+		else
+		{
 	putchar('\n');
+		}
+	}
+	}
 	return (0);
 }
