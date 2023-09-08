@@ -15,13 +15,11 @@ int main(void)
         putchar('\n');
         }
         else
+	{
 		putchar(a);
 		putchar(',');
 		putchar(' ');
-		if (a == 9)
-	{
-	putchar('\n');
 	}
-	else
+	}
 	return (0);
 }
