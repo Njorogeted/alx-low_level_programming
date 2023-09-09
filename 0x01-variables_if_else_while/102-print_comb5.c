@@ -18,7 +18,7 @@ int main(void)
 	{
 	for (c = 0; c <= 9; c++)
 	{
-	for (d = b; d <= 9; d++)
+	for (d = ((1 + c) * b); d <= 9; d++)
 	{
 		k = a + b + c + d;
 		if (a != 0 || b != 0 || c != 0
