@@ -14,15 +14,13 @@ int main(void)
 
 	for (a = 0; a <= 9; a++)
 	{
-	for (b = a; b <= 9; b++)
+	for (b = 0; b <= 9; b++)
 	{
-	for (c = b; c <= 9; c++)
+	for (c = 0; c <= 9; c++)
 	{
-	for (d = c; d <= 9; d++)
+	for (d = b; d <= 9; d++)
 	{
 		k = a + b + c + d;
-		if (a != b && a != c && b != c)
-		{
 			putchar(a + '0');
 			putchar(b + '0');
 			putchar(' ');
@@ -33,7 +31,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 			}
-		}
 	}
 	}
 	}
