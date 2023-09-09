@@ -23,6 +23,7 @@ int main(void)
 		k = a + b + c + d;
 		if (a != 0 || b != 0 || c != 0
 				|| d != 0)
+		{
 			putchar(a + '0');
 			putchar(b + '0');
 			putchar(' ');
@@ -33,6 +34,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 			}
+		}
 	}
 	}
 	}
