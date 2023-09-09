@@ -11,18 +11,18 @@ int main(void)
 	int c;
 	int k;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = 0; a <= 9; a++)
 	{
-	for (b = a; b <= '9'; b++)
+	for (b = a; b <= 9; b++)
 	{
-	for (c = b; c <= '9'; c++)
+	for (c = b; c <= 9; c++)
 	{
+		k = a + b + c;
 		if (a != b && a != c && b != c)
 		{
-			k = a + b + c;
-			putchar(a);
-			putchar(b);
-			putchar(c);
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(c + '0');
 			if (k != 24)
 			{
 			putchar(',');
