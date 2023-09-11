@@ -10,6 +10,6 @@ int main(void)
 {
 	char *ujumbe = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	write(2, ujumbe, 61);
+	write(2, ujumbe, 59);
 	return (1);
 }
