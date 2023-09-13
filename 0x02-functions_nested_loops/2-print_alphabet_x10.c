@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet - prints alphabets in lower case
+ * print_alphabet_x10 - prints alphabets in lower case x 10
  * @x - first loop to print ten time
+ * @new - pointer to the first pointer
  * Return: retun alphabets when success
  */
 void print_alphabet_x10(void)
@@ -11,11 +12,13 @@ void print_alphabet_x10(void)
 
 	for (x = 1; x <= 10; x++)
 	{
-	while (*bet)
+	char *new = bet;
+
+	while (*new)
 	{
-		_putchar(*bet);
-		bet++;
+		_putchar(*new);
+		new++;
 	}
-	}
+}
 }
 
