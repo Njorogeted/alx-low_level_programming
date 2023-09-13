@@ -10,6 +10,7 @@ int main(void)
 	while (*jina)
 	{
 	_putchar(*jina);
+	jina++;
 	}
 	return (0);
 }
