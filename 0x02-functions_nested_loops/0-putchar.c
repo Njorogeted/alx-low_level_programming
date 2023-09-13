@@ -1,10 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - program to print _putchar
  * Return: return 0 when success
  */
 int main(void)
 {
-	printf("_putchar");
+	char *jina = "_putchar\n";
+
+	while (*jina)
+	{
+	_putchar(*jina);
+	}
 	return (0);
 }
