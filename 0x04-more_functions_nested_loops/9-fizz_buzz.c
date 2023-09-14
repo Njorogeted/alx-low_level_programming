@@ -13,18 +13,22 @@ int main(void)
 		&& (x % 5) == 0)
 		{
 			printf("FizzBuzz");
+			putchar (' ');
 		}
 		else if ((x % 3) == 0)
 		{
 			printf("Fizz");
+			putchar (' ');
 		}
 		else if ((x % 5) == 0)
 		{
 			printf("Buzz");
+			putchar (' ');
 		}
 		else
 		{
 			printf("%d", x);
+			putchar (' ');
 		}
 	}
 	return (0);
