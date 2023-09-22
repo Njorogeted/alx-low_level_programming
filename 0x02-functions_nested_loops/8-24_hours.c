@@ -8,11 +8,11 @@ void jack_bauer(void)
 {
 	int x, y;
 
-	for(x = 0; x <= 24; x++)
+	for (x = 0; x < 24; x++)
 	{
-		for(y = 0; y < 60; y++)
+		for (y = 0; y < 60; y++)
 		{
-			printf("%02d:%02d\n",x,y);
+			printf("%02d:%02d\n", x, y);
 		}
 	}
 }
