@@ -9,9 +9,13 @@ void print_times_table(int n)
 {
 	int x, y;
 
-	if (n <= 0 || n > 15)
+	if (n < 0 || n > 15)
 	{
-		printf(" \n");
+		return; 
+	}
+	if (n == 0)
+	{
+		printf("0\n");
 	}
 	else
 	for (x = 0; x <= n; x++)
@@ -24,7 +28,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-			printf(",  %2d", x * y);
+			printf(",%4d", x * y);
 			}
 		}
 		printf("\n");
