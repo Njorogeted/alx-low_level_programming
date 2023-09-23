@@ -13,9 +13,10 @@ void print_times_table(int n)
 	{
 		return;
 	}
+	else
 	for (x = 0; x <= n; x++)
 	{
-		for (y = 0; y < n; y++)
+		for (y = 0; y <= n; y++)
 		{
 			if (y == 0)
 			{
